@@ -1,0 +1,39 @@
+{
+  "name": "poopetti",
+  "version": "1.0.0-beta.0",
+  "description": "Lightweight poop emoji animation library",
+  "license": "MIT",
+  "author": "Enes Zorlu",
+  "homepage": "https://github.com/enszrlu/poopetti#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enszrlu/poopetti.git"
+  },
+  "keywords": [
+    "react-poopetti",
+    "react-poop",
+    "nextjs-poopetti",
+    "nextjs-poop",
+    "rain-poop",
+    "poop-rain",
+    "poop-emoji",
+    "poop-animation",
+    "poop-effect",
+    "confetti-poop",
+    "poop",
+    "poopetti",
+    "poop-animation",
+    "react",
+    "nextjs"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "start": "npm run build && node dist/index.js"
+  },
+  "peerDependencies": {},
+  "devDependencies": {
+    "typescript": "^5.6.2"
+  }
+}
