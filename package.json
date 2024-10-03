@@ -1,9 +1,9 @@
 {
   "name": "poopetti",
   "version": "1.0.0-beta.0",
-  "description": "Lightweight poop emoji animation library",
+  "description": "A Lightweight Animated Emojis Library, mainly focused on Poop Emoji",
   "license": "MIT",
-  "author": "Enes Zorlu",
+  "author": "Alex Enes Zorlu",
   "homepage": "https://github.com/enszrlu/poopetti#readme",
   "repository": {
     "type": "git",
