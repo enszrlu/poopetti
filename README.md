@@ -2,7 +2,7 @@
 
 Welcome to **Poopetti**, a lightweight, fun-filled library that brings the joy of animated poop emojis to your web applications! 🎉
 
-- **[Website - Demo](https://poopetti.vercel.app)**
+- **[Website - Demo](https://poopetti.com)**
 - **[Repository](https://github.com/enszrlu/poopetti)**
 
 ## Are You Drowning in User Incompetence? Poopetti to the Rescue! 💩🦸‍♂️
