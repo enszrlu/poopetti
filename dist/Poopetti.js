@@ -18,7 +18,8 @@ const createEmojiElement = (emoji, size, x, y) => {
 };
 // rainPoop function
 export const rainPoop = (options = {}) => {
-    const { emoji = '💩', duration = 5000, density = 50 } = options;
+    const { emoji = '💩', duration = 5000, density = 200 } = options;
+    const emojis = Array.isArray(emoji) ? emoji : [emoji];
     const container = document.createElement('div');
     container.style.position = 'fixed';
     container.style.top = '0';
@@ -32,7 +33,8 @@ export const rainPoop = (options = {}) => {
         const size = Math.random() * 30 + 10;
         const x = Math.random() * window.innerWidth;
         const y = -size;
-        const element = createEmojiElement(emoji, size, x, y);
+        const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+        const element = createEmojiElement(randomEmoji, size, x, y);
         container.appendChild(element);
         const animationDuration = Math.random() * 2 + 1;
         element.animate([
@@ -57,7 +59,7 @@ export const poopetti = (options = {}) => {
     const windowWidth = window?.innerWidth || 200;
     const windowHeight = window?.innerHeight || 200;
     const defaultRadius = 0.2 * Math.max(windowWidth, windowHeight);
-    const { emoji = '💩', duration = 1500, density = 50, radius = defaultRadius } = options;
+    const { emoji = '💩', duration = 1500, density = 200, radius = defaultRadius, } = options;
     createStyle(`
     @keyframes shake {
       0%, 100% { transform: translate(-50%, -50%) rotate(0deg); }

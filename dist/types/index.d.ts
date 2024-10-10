@@ -1,5 +1,5 @@
 export type RainPoopOptions = {
-    emoji?: string;
+    emoji?: string | string[];
     duration?: number;
     density?: number;
 };

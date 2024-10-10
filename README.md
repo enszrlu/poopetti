@@ -49,6 +49,13 @@ rainPoop({
   density: 100,
 });
 
+// Make it rain poop in your style!
+rainPoop({
+  emoji: ['💩', '😃', '😂', '😍', '😡', '😴', '😷', '😵', '😳', '😱'],
+  duration: 10000,
+  density: 500,
+});
+
 // Burst some poop!
 poopetti();
 
@@ -65,11 +72,11 @@ poopetti({
 
 ### rainPoop(options)
 
-| Option   | Type   | Default | Description                                                                |
-| -------- | ------ | ------- | -------------------------------------------------------------------------- |
-| emoji    | string | 💩      | The emoji to rain (can be any emoji, but why would you use anything else?) |
-| duration | number | 5000    | Duration of the poop rain in milliseconds                                  |
-| density  | number | 50      | How much poop do you want? More means more poop!                           |
+| Option   | Type               | Default | Description                                                                                                      |
+| -------- | ------------------ | ------- | ---------------------------------------------------------------------------------------------------------------- |
+| emoji    | string or string[] | 💩      | The emoji to rain (can be any emoji, but why would you use anything else?) Provide array to rain multiple emojis |
+| duration | number             | 5000    | Duration of the poop rain in milliseconds                                                                        |
+| density  | number             | 50      | How much poop do you want? More means more poop!                                                                 |
 
 ### poopetti(options)
 

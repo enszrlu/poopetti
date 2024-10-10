@@ -1,6 +1,6 @@
 // Define types for function parameters
 export type RainPoopOptions = {
-  emoji?: string;
+  emoji?: string | string[];
   duration?: number;
   density?: number;
 };
