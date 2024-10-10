@@ -59,7 +59,7 @@ export const poopetti = (options = {}) => {
     const windowWidth = window?.innerWidth || 200;
     const windowHeight = window?.innerHeight || 200;
     const defaultRadius = 0.2 * Math.max(windowWidth, windowHeight);
-    const { emoji = '💩', duration = 1500, density = 200, radius = defaultRadius, } = options;
+    const { emoji = '💩', duration = 1500, density = 200, radius = defaultRadius, content = '💩', } = options;
     createStyle(`
     @keyframes shake {
       0%, 100% { transform: translate(-50%, -50%) rotate(0deg); }
@@ -101,7 +101,12 @@ export const poopetti = (options = {}) => {
         mainEmoji.style.display = 'none';
         for (let i = 0; i < density; i++) {
             const burstEmoji = document.createElement('div');
-            burstEmoji.textContent = emoji;
+            if (Array.isArray(content)) {
+                burstEmoji.textContent = content[Math.floor(Math.random() * content.length)];
+            }
+            else {
+                burstEmoji.textContent = content;
+            }
             burstEmoji.style.position = 'absolute';
             burstEmoji.style.top = '50%';
             burstEmoji.style.left = '50%';

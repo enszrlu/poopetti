@@ -10,4 +10,5 @@ export type PoopettiOptions = {
   duration?: number;
   density?: number;
   radius?: number;
+  content?: string | string[];
 };

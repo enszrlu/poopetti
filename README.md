@@ -66,6 +66,11 @@ poopetti({
   density: 50,
   radius: 200,
 });
+
+// Burst some poop in your style with Piñata style!
+poopetti({
+  content: ['💩', '🔥', '⭐️'],
+});
 ```
 
 ## API: The Poop Deck (Where All the Magic Happens)
@@ -80,12 +85,13 @@ poopetti({
 
 ### poopetti(options)
 
-| Option   | Type   | Default | Description                                        |
-| -------- | ------ | ------- | -------------------------------------------------- |
-| emoji    | string | 💩      | The emoji to burst (again, why change perfection?) |
-| duration | number | 1500    | Duration of the poop explosion in milliseconds     |
-| density  | number | 50      | How explosive should your poop be?                 |
-| radius   | number | auto    | The radius of the poop explosion                   |
+| Option   | Type               | Default | Description                                        |
+| -------- | ------------------ | ------- | -------------------------------------------------- |
+| emoji    | string             | 💩      | The emoji to burst (again, why change perfection?) |
+| duration | number             | 1500    | Duration of the poop explosion in milliseconds     |
+| density  | number             | 50      | How explosive should your poop be?                 |
+| radius   | number             | auto    | The radius of the poop explosion                   |
+| content  | string or string[] | 💩      | The content of the poop explosion (Piñata style)   |
 
 ## Contributing
 

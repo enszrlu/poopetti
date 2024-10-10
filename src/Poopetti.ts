@@ -83,6 +83,7 @@ export const poopetti = (options: PoopettiOptions = {}) => {
     duration = 1500,
     density = 200,
     radius = defaultRadius,
+    content = '💩',
   } = options;
 
   createStyle(`
@@ -132,7 +133,11 @@ export const poopetti = (options: PoopettiOptions = {}) => {
 
     for (let i = 0; i < density; i++) {
       const burstEmoji = document.createElement('div');
-      burstEmoji.textContent = emoji;
+      if (Array.isArray(content)) {
+        burstEmoji.textContent = content[Math.floor(Math.random() * content.length)];
+      } else {
+        burstEmoji.textContent = content;
+      }
       burstEmoji.style.position = 'absolute';
       burstEmoji.style.top = '50%';
       burstEmoji.style.left = '50%';
